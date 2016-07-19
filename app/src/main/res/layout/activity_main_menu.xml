@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.daru.tessuitmedia.MainMenuActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama:"
+        android:id="@+id/textview"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="58dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="122dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameview"
+        android:text="nama saya"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/textview"
+        android:layout_toRightOf="@+id/textview"
+        android:layout_toEndOf="@+id/textview"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Event"
+        android:id="@+id/eventbutton"
+        android:onClick="onEventButtonClick"
+        android:layout_below="@+id/textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Guest"
+        android:id="@+id/guestbutton"
+        android:onClick="onGuestButtonClick"
+        android:layout_below="@+id/eventbutton"
+        android:layout_alignLeft="@+id/eventbutton"
+        android:layout_alignStart="@+id/eventbutton" />
+
+
+</RelativeLayout>
